@@ -1,0 +1,427 @@
+@use "../../../styles/" as *;
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    .general {
+        @include flex(flex-start,unset, column);
+        padding: 0px;
+        width: 373px;
+        .general-top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 5px 20px;
+            gap: 10px;
+            width: 373px;
+            height: 40px;
+            background: #2D3748;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            .top-main {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+                gap: 91px;
+                width: 333px;
+                height: 24px;
+                .general-title {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0px;
+                    gap: 10px;
+                    width: 88px;
+                    height: 24px;
+                    .general-calender {
+                        width: 24px;
+                        height: 24px;
+                        .general-btn {
+                            left: 8.33%;
+                            right: 8.33%;
+                            top: 4.17%;
+                            bottom: 4.17%;
+                        }
+                    }
+                    .general-font {
+                        width: 54px;
+                        height: 17px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        flex: none;
+                        order: 1;
+                        flex-grow: 0;
+                    }
+                }
+                .icon-dropdown {
+                    transform: rotate(90deg); 
+                }
+            }
+        }
+        .general-detail {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 15px;
+            width: 373px;
+            height: auto;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            .detail-classTime {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 20px;
+                width: auto;
+                height: auto;
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+                .classTime {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0px;
+                    gap: 10px;
+                    width: auto;
+                    height: 24px;
+                    .classTime-title {
+                        width: auto;
+                        height: 17px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                    }
+                }
+                .time {
+                    width: auto;
+                    height: 17px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000000;
+                }
+            }
+
+            .detail-location {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 5px;
+                width: 333px;
+                height: auto;
+                .location-line1 {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0px;
+                    gap: 40px;
+                    width: auto;
+                    height: 24px;
+                    .line1-detail {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 0px;
+                        gap: 10px;
+                        width: 90px;
+                        height: 24px;
+                        .location-title {
+                            width: 60px;
+                            height: 17px;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #000000;
+                        }
+                    }
+                    .line1-place {
+                        width: 50px;
+                        height: 17px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .detail-trainer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 5px;
+                width: 333px;
+                height: auto;
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+                .line1-trainer {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 0px;
+                    width: 333px;
+                    height: 24px;
+                    .line1-detail {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 0px;
+                        gap: 40px;
+                        width: auto;
+                        height: 24px;
+                        .layout-trainer {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 0px;
+                            gap: 10px;
+                            width: 90px;
+                            height: 24px;
+                            .trainer-icon {
+                                color: #285D9A !important;
+                            }
+                            .trainer-title {
+                                width: 49px;
+                                height: 17px;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #000000;
+                                flex: none;
+                                order: 1;
+                                flex-grow: 0;
+                            }
+                        }
+                        .line1-name {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            padding: 0px;
+                            gap: 2px;
+                            width: auto;
+                            height: 17px;
+                            .name-trainer {
+                                width: auto;
+                                height: 17px;
+
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                                text-decoration-line: underline;
+                                color: #285D9A;
+                            }
+                        }
+                    }
+                }
+            }
+            .detail-admin {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 5px;
+                width: 333px;
+                height: auto;
+                flex: none;
+                order: 3;
+                flex-grow: 0;
+                .line1-admin {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 0px;
+                    width: 333px;
+                    height: 24px;
+                    .admin-detail {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 0px;
+                        gap: 40px;
+                        width: auto;
+                        height: 24px;
+                        .layout-admin {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 0px;
+                            gap: 10px;
+                            width: 90px;
+                            height: 24px;
+                            .admin-title {
+                                width: 45px;
+                                height: 17px;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #000000;
+                                flex: none;
+                                order: 1;
+                                flex-grow: 0;
+                            }
+                        }
+                        .admin-name {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            padding: 0px;
+                            gap: 2px;
+                            width: auto;
+                            height: 17px;
+                            .adminer {
+                                width: 117px;
+                                height: 17px;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                                text-decoration-line: underline;
+                                color: #285D9A;
+                            }
+                        }
+                    }
+                }
+            }
+            .detail-fsu {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 5px;
+                width: auto;
+                height: auto;
+                flex: none;
+                order: 4;
+                flex-grow: 0;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #7E818C ;
+                .fsu-line1 {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 0px;
+                    width: 333px;
+                    height: 24px;
+                    .fsu-main {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 0px;
+                        gap: 40px;
+                        width: auto;
+                        height: 24px;
+                        .fsu-detail {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 0px;
+                            gap: 10px;
+                            width: 90px;
+                            height: 24px;
+                            .fsu-title {
+                                width: 28px;
+                                height: 17px;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #000000;
+                            }
+                        }
+                        .line1-fhm {
+                            width: auto;
+                            height: 17px;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            .create {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 40px;
+                width: 333px;
+                height: auto;
+                flex: none;
+                order: 6;
+                align-self: stretch;
+                flex-grow: 0;
+                .create-detail {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0px;
+                    gap: 6px;
+                    width: 90px;
+                    height: 17px;
+                    .create-title {
+                        width: 56px;
+                        height: 17px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                    }
+                }
+                .create-date {
+                    width: auto;
+                    height: 17px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000000;
+                    flex: none;
+                    order: 1;
+                    flex-grow: 0;
+                }
+            }
+        }
+    }
+}

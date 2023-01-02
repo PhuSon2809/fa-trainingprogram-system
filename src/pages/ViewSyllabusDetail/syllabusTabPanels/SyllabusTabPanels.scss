@@ -1,0 +1,63 @@
+@use "../../../styles/" as *;
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  max-height: 30px !important;
+  min-height: 30px !important;
+  box-sizing: border-box !important;
+
+  @include flex(center, center, row);
+  padding: 10px 20px 10px 30px !important;
+  gap: 40px !important;
+  width: 200px !important;
+  height: 30px !important;
+  top: 0px !important;
+  background: #6d7684 !important;
+  border: 1px solid $white !important;
+  border-radius: 20px 20px 0px 0px !important;
+  font-family: $font-family-inter !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+
+  color: $white !important;
+  text-transform: unset !important;
+  z-index: 2 !important;
+  margin-left: -10px !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root:first-child {
+  margin-left: 0 !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root:last-child {
+  z-index: 1 !important;
+}
+.Mui-selected {
+  background-color: $default-color !important;
+  font-family: $font-family-inter !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+
+  color: $white !important;
+  z-index: 3 !important;
+}
+.dot {
+  height: 18px !important;
+  width: 30px !important;
+  background-color: #6d7684 !important;
+  border-radius: 50% !important;
+  position: absolute !important;
+  z-index: 1 !important;
+  margin-left: 190px !important;
+  bottom: 0 !important;
+}
+
+.MuiTabPanel-root{
+  margin: 0;
+  padding: 0 !important;
+}
+
+.ViewSyllabusD_content__tsbeX{
+  gap: 0 !important;
+}

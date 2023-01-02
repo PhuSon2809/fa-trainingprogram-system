@@ -1,0 +1,14 @@
+@use "../../styles/" as *;
+
+.wrapper {
+  .menu-wrapper {
+    width: 436px;
+    height: fit-content;
+
+    .content {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}

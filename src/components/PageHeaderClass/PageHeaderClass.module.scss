@@ -1,0 +1,154 @@
+@use "../../styles/"as *;
+
+.wrapper {
+  width: 100%;
+  font-family: $font-family-inter;
+
+  .page-header {
+    @include flex(flex-start, center, column);
+    gap: 10px;
+    width: 100%;
+    height: 201px;
+    padding: 20px 30px;
+    border-top: 1px solid $white;
+    background: $default-color;
+    color: $white;
+
+    .title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.2em;
+    }
+
+    .content {
+      @include flex(center, space-between, unset);
+      width: 100%;
+      height: 100%;
+      padding: 0px 30px 0px 0px;
+
+      .box {
+        @include flex(center, unset, unset);
+        gap: 20px;
+        height: 44px;
+
+        .name {
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 44px;
+          letter-spacing: 0.2em;
+        }
+      }
+
+      div {
+        // height: 48px;
+
+        .more-btn {
+          width: 48px;
+          height: 100%;
+        }
+      }
+    }
+
+    .code-class {
+      width: 182px;
+      height: 19px;
+
+      /* header */
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .line {
+      width: 645px;
+      height: 0px;
+      border: 0.5px solid #FFFFFF;
+      opacity: 100%;
+      margin: 0px;
+    }
+
+
+    .meta-data {
+      @include flex(flex-start, center, column);
+      // gap: 5px;
+      // width: 100%;
+      // height: 91px;
+      // padding: 20px 0px 20px 30px;
+
+      .time {
+        @include flex(center, center, unset);
+        height: 29px;
+
+        .days {
+          @include flex(center, center, unset);
+          width: 69px;
+          height: 100%;
+
+          .number {
+            @include flex(flex-end, unset, unset);
+            width: 28px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+          }
+
+          .day {
+            @include flex(flex-end, center, unset);
+            width: 41px;
+            height: 24px;
+            font-size: 14px;
+            line-height: 17px;
+          }
+        }
+
+        .hour {
+          @include flex(flex-end, unset, unset);
+          width: 84px;
+          height: 25px;
+          font-size: 14px;
+          line-height: 17px;
+          font-style: italic;
+        }
+
+
+      }
+
+      .inline {
+        @include flex(flex-end, unset, unset);
+        width: 5px;
+        height: 17px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 0 10px;
+        gap: 10px;
+        font-family: 'Inter';
+      }
+
+      .flex-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 15px;
+        width: 232px;
+        height: 24px;
+      }
+
+
+      .modifi {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 14d79e8b0ae86b69ecabdbbe00102d221276b919

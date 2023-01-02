@@ -1,0 +1,134 @@
+.TimeAllocation_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 35px;
+  border-radius: 10px !important;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.16) !important;
+  width: 435px;
+  height: 310px;
+}
+.TimeAllocation_card_header {
+  height: 32px;
+  width: 435px;
+  background-color: #2d3748;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 700 !important;
+}
+.TimeAllocation_PieChart {
+  display: flex;
+  .asdasd {
+    width: 208.86px !important;
+    height: 209.15px !important;
+    margin-bottom: 30px;
+  }
+  .PieChart_list {
+    padding-top: 20px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+.timeallocation_content_items .A_Lab {
+  /* Bullet color */
+  color: #f4be37;
+  list-style: none;
+  font-size: 12px;
+  padding: 6px;
+}
+.A_Lab:before {
+  content: "·";
+  font-size: 50px;
+  vertical-align: middle;
+  line-height: 20px;
+  padding-right: 8.48px;
+}
+
+.timeallocation_content_items .C_Lec {
+  /* Bullet color */
+  color: #ff9f40;
+  padding: 6px;
+  list-style: none;
+  font-size: 12px;
+}
+.C_Lec:before {
+  content: "·";
+  font-size: 50px;
+  vertical-align: middle;
+  line-height: 20px;
+  padding-right: 8.48px;
+}
+
+.timeallocation_content_items .G_Rev {
+  /* Bullet color */
+  color: #0d2535;
+  list-style: none;
+  font-size: 12px;
+  padding: 6px;
+}
+.G_Rev:before {
+  content: "·";
+  font-size: 50px;
+  vertical-align: middle;
+  line-height: 20px;
+  padding-right: 8.48px;
+}
+
+.timeallocation_content_items .T_Qui {
+  /* Bullet color */
+  color: #5388d8;
+  list-style: none;
+  font-size: 12px;
+  padding: 6px;
+}
+.T_Qui:before {
+  content: "·";
+  font-size: 50px;
+  vertical-align: middle;
+  line-height: 20px;
+  padding-right: 8.48px;
+}
+
+.timeallocation_content_items .Exam {
+  /* Bullet color */
+  color: #206ee5;
+  list-style: none;
+  font-size: 12px;
+  padding: 6px;
+}
+.Exam:before {
+  content: "·";
+  font-size: 50px;
+  vertical-align: middle;
+  line-height: 20px;
+  padding-right: 8.48px;
+}
+
+.timeallocation_content_items .Semi {
+  /* Bullet color */
+  color: #0A1135;
+  list-style: none;
+  font-size: 12px;
+  padding: 6px;
+}
+.Semi:before {
+  content: "·";
+  font-size: 50px;
+  vertical-align: middle;
+  line-height: 20px;
+  padding-right: 8.48px;
+}
+
+ul li span {
+  /* Text color */
+  color: black;
+}
+ul {
+  // padding-top: 20px;
+  // padding-left: 0px;
+}

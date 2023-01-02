@@ -1,0 +1,38 @@
+@use "../../styles/" as *;
+
+.home {
+  @include flex(center, center, row);
+  height: 100%;
+
+  .wrapper {
+    @include flex(center, center, row);
+    min-width: 400px;
+    padding: 10px 30px;
+    gap: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background: $blue-main-color;
+
+    .title {
+      color: white;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  .Trainer {
+    background: #2d3748;
+  }
+  
+  .Student {
+    background: #285d9a;
+  }
+  
+  .Class_Admin {
+    background: #2f903f;
+  }
+  
+  .Super_Admin {
+    background: #d45b13;
+  }
+}

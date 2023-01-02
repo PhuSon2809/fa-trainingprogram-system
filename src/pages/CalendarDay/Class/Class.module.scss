@@ -1,0 +1,164 @@
+@use "../../../styles/" as *;
+
+.class {
+  @include flex(center, center, row);
+  padding: 10px;
+  gap: 10px;
+  width: fit-content;
+  height: 35px;
+  border-radius: 5px;
+  background: #2d3748;
+
+  .class-code {
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+
+  .line {
+    font-size: 10px;
+    line-height: 12px;
+    color: #ffffff;
+  }
+
+  .subject {
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+}
+
+.class-popup {
+  .content {
+    @include flex(flex-start, unset, column);
+    padding: 10px;
+    width: 280px;
+    gap: 12px;
+    background: #8eb1da;
+    border-radius: 0px 0px 10px 10px;
+
+    .name {
+      @include flex(center, unset, row);
+      gap: 10px;
+      width: 100%;
+      height: 15px;
+
+      p {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    .lesson {
+      @include flex(flex-start, unset, column);
+      gap: 7px;
+      width: 100%;
+
+      .day {
+        @include flex(center, unset, row);
+        gap: 10px;
+        width: 100%;
+        height: 15px;
+
+        p {
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+
+      .unit {
+        @include flex(center, unset, row);
+        gap: 10px;
+        width: 100%;
+
+        .inner-unit {
+          @include flex(center, unset, row);
+          gap: 10px;
+
+          p {
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+
+        .unit-name {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+    }
+
+    .infor {
+      @include flex(flex-start, unset, column);
+      gap: 7px;
+
+      .location,
+      .trainee,
+      .admin {
+        @include flex(flex-start, unset, row);
+        gap: 10px;
+        width: 100%;
+        min-height: 16px;
+
+        .tag {
+          @include flex(center, unset, row);
+          gap: 10px;
+          width: 70px !important;
+          height: 100%;
+
+          p {
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+
+
+        p {
+          font-size: 12px;
+          line-height: 15px;
+        }
+
+        .list-link {
+          @include flex(flex-start, unset, column);
+          gap: 5px;
+
+          .link {
+            text-decoration-line: underline;
+            color: #285d9a;
+          }
+        }
+      }
+    }
+  }
+
+  .intern-popup {
+    background: #95acd7;
+  }
+  .fresher-popup {
+    background: #8eb1da;
+  }
+  .online-popup {
+    background: #67c476;
+  }
+  .offline-popup {
+    background: #eda277;
+  }
+}
+
+.intern {
+  background: #2d3748;
+}
+
+.fresher {
+  background: #285d9a;
+}
+
+.online {
+  background: #2f903f;
+}
+
+.offline {
+  background: #d45b13;
+}

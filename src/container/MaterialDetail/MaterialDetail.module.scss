@@ -1,0 +1,79 @@
+@use "../../styles/" as *;
+
+.wrapper {
+  @include flex(center, unset, row);
+  padding: 0px 20px 0px 30px;
+  gap: 75px;
+  width: 1120px;
+  height: 151px;
+
+  .inner {
+    @include flex(flex-start, flex-end, row);
+    padding: 0px;
+    gap: 5px;
+    width: 1070px;
+    height: 100%;
+
+    .drag {
+      @include flex(center, center, row);
+      padding: 10px;
+      gap: 10px;
+      width: 41px;
+      height: 151px;
+      background: $bg-drag-btn-color;
+      border-radius: 10px;
+      color: $blue-main-color;
+      // display: none;
+    }
+
+    .list-lesson {
+      @include flex(flex-start, unset, column);
+      padding: 0px;
+      gap: 5px;
+      width: 948px;
+      height: 151px;
+
+      .lesson {
+        @include flex(center, space-between, row);
+        padding: 5px 20px;
+        width: 948px;
+        height: 34px;
+        background: $bg-lesson-color;
+        border-radius: 10px;
+
+        .name {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        .infor {
+          @include flex(center, space-between, row);
+          padding: 0px;
+          width: 385px;
+          height: 27px;
+
+          .time {
+            font-size: 14px;
+            line-height: 17px;
+          }
+
+          .icon-hover {
+            width: 24px;
+            height: 24px;
+            color: $blue-main-color;
+          }
+
+          .icon-popup {
+            width: 24px;
+            height: 24px;
+            color: $blue-main-color;
+            padding: 0;
+            border: none;
+            gap: 0;
+          }
+        }
+      }
+    }
+  }
+}

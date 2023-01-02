@@ -1,0 +1,43 @@
+@use "../../styles/" as *;
+
+.lesson {
+  @include flex(center, space-between, row);
+  padding: 5px 20px;
+  width: 948px;
+  height: 34px;
+  background: $bg-lesson-color;
+  border-radius: 10px;
+
+  .name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .infor {
+    @include flex(center, space-between, row);
+    padding: 0px;
+    width: 385px;
+    height: 27px;
+
+    .time {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .icon-hover {
+      width: 24px;
+      height: 24px;
+      color: $blue-main-color;
+    }
+
+    .icon-popup {
+      width: 24px;
+      height: 24px;
+      color: $blue-main-color;
+      padding: 0;
+      border: none;
+      gap: 0;
+    }
+  }
+}

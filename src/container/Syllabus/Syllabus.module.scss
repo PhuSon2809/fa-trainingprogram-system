@@ -1,0 +1,40 @@
+@use "../../styles/" as *;
+
+.syllabus {
+  @include flex(flex-start, center, column);
+  padding: 20px 30px;
+  gap: 10px;
+
+  width: 960px;
+  height: 96px;
+
+  background: $white;
+  box-shadow: $box-shadow;
+  border-radius: 20px;
+  cursor: pointer;
+
+  .program-name {
+    @include flex(flex-start, unset, row);
+    padding: 0 30px 0 0;
+    gap: 10px;
+    height: 29px;
+
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.2em;
+      color: $default-color;
+    }
+  }
+
+  .syllabus-meta {
+    @include flex(flex-start, unset, row);
+    gap: 10px;
+    height: 17px;
+    color: $text-meta-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

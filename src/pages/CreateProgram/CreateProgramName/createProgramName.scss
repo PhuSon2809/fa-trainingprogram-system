@@ -1,0 +1,119 @@
+@use "../../../styles/" as *;
+
+.container_wrap {
+  width: 100%;
+  font-family: $font-family-inter;
+
+  .page-header {
+    @include flex(flex-start, center, column);
+    gap: 10px;
+    width: 100%;
+    height: 69px;
+    padding: 20px 30px;
+    border-top: 1px solid $white;
+    background: $default-color;
+    color: $white;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.2em;
+  }
+
+  .program-meta-data {
+    @include flex(flex-start, center, column);
+    padding: 20px 0px 20px 30px;
+    gap: 5px;
+    width: 1172px;
+    height: 97px;
+
+    .program-name {
+      @include flex(flex-start, unset, column);
+      padding: 0px;
+      gap: 5px;
+      width: 448px;
+      height: 57px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+
+      .text-program-name {
+        width: 104px;
+        height: 17px;
+        font-family: $font-family-inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+      }
+
+      .form-input-program-name {
+        @include flex(flex-start, unset, row);
+        padding: 0px;
+        gap: 5px;
+        width: 448px;
+        height: 35px;
+
+        .lable-input {
+          box-sizing: border-box;
+          @include flex(center, unset, row);
+          padding: 10px;
+          gap: 10px;
+
+          width: 376px;
+          height: 35px;
+
+          background: #ffffff;
+          border: 1px solid #000000;
+          border-radius: 10px;
+
+          font-family: "Inter";
+          font-style: italic;
+
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        .button-create {
+          box-sizing: border-box;
+
+          @include flex(center, center, row);
+          padding: 10px;
+          gap: 10px;
+
+          width: 67px;
+          height: 35px;
+          color: white !important;
+          background: #2d3748;
+          border: 1px solid #2d3748;
+          border-radius: 10px;
+
+          .text-button--create {
+            width: 47px;
+            height: 17px;
+
+            font-family: $font-family-inter;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    border: 0.1px solid #f8f2f2;
+    box-shadow: 0px 4px 4px rgba(225, 220, 220, 0.25);
+  }
+}

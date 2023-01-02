@@ -1,0 +1,262 @@
+.tmc-showed-true {
+    display: flex !important;
+}
+
+.tmc-showed-false {
+    display: none;
+}
+
+.layout-training-material {
+    position: fixed !important;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+
+.training-material-container {
+    //pop up styles
+    position: fixed !important;
+    top: 50%;
+    z-index: 10;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    //common styles
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 20px;
+    gap: 15px;
+
+    width: 709px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 40px 20px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+    border: #FFFFFF 0.5px solid;
+
+    .tm-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px 10px 30px;
+        gap: 40px;
+
+        width: 709px;
+        height: 44px;
+
+        background: #2D3748;
+        border-radius: 20px 20px 0px 0px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        .tm-day {
+            min-width: 45px;
+            height: 19px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #FFFFFF;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .tm-exit-icon {
+            color: #FFFFFF;
+        }
+    }
+
+    .tm-body {
+        display: flex;
+        flex-direction: column;
+
+        .tm-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 50px;
+            align-items: center;
+            padding-bottom: 20px;
+
+            .tm-unit {
+                min-width: 47px;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #000000;
+
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+
+            .tm-lesson {
+                /* .NET Introduction */
+
+                height: 19px;
+
+                /* header */
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+
+                color: #000000;
+
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+            }
+        }
+
+        .tm-material {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 10px 20px;
+            gap: 10px;
+
+            width: 649px;
+
+            /* Box */
+
+            background: #F1F1F1;
+            border-radius: 10px;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+
+            .material-lesson-name {
+                height: 17px;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+
+                color: #000000;
+
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+
+
+        }
+
+        .tm-upload-btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin-top: 15px;
+
+            gap: 10px;
+
+            width: 101px;
+            height: 37px;
+
+            /* Main */
+
+            background: #2D3748;
+            border-radius: 10px;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+            align-self: center;
+
+            .upload-btn-name {
+                width: 81px;
+                height: 17px;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height */
+
+
+                color: #FFFFFF;
+
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+            }
+        }
+    }
+}
+
+.fileupload {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.fileupload input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* not left, because only the right part of the input seems to
+                 be clickable in some browser I can't remember */
+    cursor: pointer;
+    opacity: 0.0;
+    filter: alpha(opacity=0);
+    /* and all the other old opacity stuff you
+                                 want to support */
+    font-size: 300px;
+    /* wtf, but apparently the most reliable way to make
+                         a large part of the input clickable in most browsers */
+    height: 200px;
+}

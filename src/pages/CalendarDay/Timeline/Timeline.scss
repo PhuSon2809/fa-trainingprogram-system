@@ -1,0 +1,37 @@
+@use "../../../styles/" as *;
+
+.timeline {
+  .line-inner {
+    @include flex(center, unset, row);
+    padding: 2px 20px 0px 20px;
+    gap: 31px;
+    width: 100%;
+    min-height: 35px;
+    border-top: 0.2px solid #000000;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    .text-frame {
+      @include flex(center, unset, unset);
+      width: 70px;
+      min-height: 24px;
+      border-right: 0.5px solid #474747;
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    .class-list {
+      @include flex(flex-end, unset, row);
+      flex-wrap: wrap;
+      gap: 13px;
+      width: 100%;
+      min-height: 35px;
+    }
+  }
+}

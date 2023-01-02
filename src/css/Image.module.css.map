@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/components/Image/Image.module.scss"
+    ],
+    "names": [],
+    "file": "Image.module.css"
+}

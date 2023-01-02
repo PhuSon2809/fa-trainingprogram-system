@@ -1,0 +1,72 @@
+
+
+.material-container {
+    display: flex;
+    flex-direction: row;
+    // justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 16px;
+
+    .material-file {
+
+        width: 220px;
+        height: 17px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        text-decoration-line: underline;
+
+        color: #0C4DA2 !important; 
+        cursor: pointer;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+
+    .material-author {
+        min-width: 166px;
+        height: 17px;
+
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+
+        color: #323232;
+
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+    .material-icon {
+        color: #285D9A;
+
+    }
+}
+
+.mc-deleted-true {
+    display: none;
+}
+
+.dialog-delete-title {
+    color:#0C4DA2;
+    text-decoration: underline;
+    font-style: italic;
+}

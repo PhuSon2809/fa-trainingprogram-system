@@ -1,0 +1,17 @@
+@use "../../../styles/" as *;
+
+table {
+  tbody {
+    .timelineWeek {
+      @include flex(unset, unset, row);
+      width: 1150px;
+
+      .column {
+        @include flex(unset, unset, column);
+        gap: 10px;
+        width: calc(1150px / 7);
+        height: fit-content;
+      }
+    }
+  }
+}

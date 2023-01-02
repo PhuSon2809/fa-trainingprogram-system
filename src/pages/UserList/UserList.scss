@@ -1,0 +1,62 @@
+.userList {
+    th.MuiTableHead-root {
+        height: 40px;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 40px;
+    }
+
+    .MuiTableRow-head th {
+        background-color: #2d3748;
+        color: white;
+        font-family: "Inter";
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    tr:first-child th:first-child {
+        border-top-left-radius: 10px;
+    }
+
+    tr:first-child th:last-child {
+        border-top-right-radius: 10px;
+    }
+
+    p.MuiTablePagination-displayedRows {
+        display: none;
+    }
+
+    div.MuiTablePagination-actions {
+        display: none;
+    }
+
+    .MuiButtonBase-root.MuiPaginationItem-page {
+        background-color: #e2e8f0 !important;
+        color: #285d9a;
+        font-family: "Inter" !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+    }
+
+    .MuiButtonBase-root.Mui-selected {
+        background-color: #285d9a !important;
+        color: #f7fafb;
+    }
+
+    .MuiTablePagination-root {
+        font-family: "Inter";
+        color: #285d9a;
+    }
+
+    p.MuiTablePagination-selectLabel {
+        font-family: "Inter";
+        color: #285d9a;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .MuiTablePagination-root .MuiInputBase-root {
+        font-family: "Inter";
+        color: #285d9a;
+        font-size: 14px;
+    }
+}

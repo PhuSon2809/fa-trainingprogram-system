@@ -1,0 +1,301 @@
+@use "../../styles/" as *;
+
+.popupfilter {
+  @include flex(flex-start, unset, column);
+  padding: 10px 20px;
+  gap: 50px;
+  min-width: fit-content;
+  height: 389px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.25) !important;
+  font-family: $font-family-inter !important;
+  transition: all 0.3s ease-in-out;
+
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $default-color;
+  }
+
+  .location-time {
+    @include flex(center, unset, row);
+    gap: 29px;
+    width: 100%;
+    height: 50px;
+
+    .location,
+    .time {
+      @include flex(flex-start, center, column);
+      gap: 5px;
+      height: 100%;
+    }
+
+    .location {
+      width: 391px;
+
+      .ant-select-multiple {
+        .ant-select-selection-item-content {
+          margin-right: 0;
+          margin-top: 1px;
+          height: 100%;
+          font-size: 14px;
+          line-height: 17px;
+          font-family: $font-family-inter;
+          color: $white;
+        }
+      }
+
+      .ant-select {
+        width: 100%;
+        height: 28px;
+
+        .ant-select-clear {
+          right: 35px;
+          margin-top: -7.5px;
+        }
+
+        .ant-select-selector {
+          @include flex(center, center, row);
+          padding-left: 10px;
+          padding-top: 0;
+          padding-bottom: 3px;
+
+          height: 28px;
+          border: 0.5px solid #8b8b8b;
+          border-radius: 5px;
+
+          .ant-select-selection-overflow {
+            height: 22px;
+            gap: 10px;
+
+            .ant-select-selection-overflow-item {
+              @include flex(center, center, row);
+              height: 100%;
+              margin: 0;
+
+              .ant-select-selection-item {
+                margin: 0;
+                margin-bottom: 2px;
+                padding: 0px 10px 2px 10px;
+                width: fit-content;
+                height: 100%;
+                background: #8b8b8b;
+                border-radius: 2px;
+              }
+            }
+          }
+
+          .ant-select-selection-search {
+            height: 100%;
+
+            .ant-select-selection-search-input {
+              margin-right: 0 !important;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .time {
+      width: fit-content;
+
+      .from-to {
+        @include flex(flex-start, unset, row);
+        gap: 15px;
+        width: 100%;
+        height: 27px;
+
+        .from,
+        .to {
+          @include flex(center, unset, row);
+          gap: 10px;
+          width: fit-content;
+          height: 100%;
+
+          input {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px 10px;
+            gap: 5px;
+            width: 125px;
+            height: 27px;
+            background: #ffffff;
+            border: 0.5px solid #8b8b8b;
+            border-radius: 5px;
+            font-size: 14px;
+          }
+
+          .ant-picker {
+            padding: 5px 10px;
+            width: 130px;
+            height: 27px;
+            border: 0.5px solid #8b8b8b;
+            border-radius: 5px;
+
+            .ant-picker-input {
+              @include flex(center, unset, row);
+              input {
+                font-size: 14px;
+                line-height: 17px;
+                color: #8b8b8b;
+                &:placeholder-shown {
+                  line-height: 17px;
+                  color: #8b8b8b;
+                }
+              }
+              .ant-picker-suffix {
+                height: 16px;
+                width: 16px;
+                color: $blue-main-color;
+
+                svg {
+                  height: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .check-box {
+    @include flex(flex-start, unset, row);
+    gap: 40px;
+    width: fit-content;
+    height: 103px;
+
+    .classtime {
+      .title {
+        width: 100%;
+      }
+    }
+
+    .classtime,
+    .status,
+    .attend {
+      @include flex(flex-start, unset, row);
+      padding: 5px 0px 0px;
+      gap: 15px;
+      height: fit-content;
+
+      .ant-checkbox-group {
+        @include flex(flex-start, unset, column);
+        padding: 0px;
+        gap: 10px;
+        width: 100%;
+
+        .ant-checkbox-wrapper {
+          @include flex(flex-end, unset, row);
+          margin: 0;
+          gap: 5px;
+          height: 17px;
+          position: relative;
+
+          .ant-checkbox {
+            top: 0;
+            margin-bottom: 2.5px;
+            width: 12px;
+            height: 12px;
+
+            .ant-checkbox-input {
+              width: 100%;
+              height: 100%;
+            }
+            .ant-checkbox-inner {
+              border-color: $blue-main-color;
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .ant-checkbox-checked {
+            &::after {
+              border-color: $blue-main-color;
+            }
+            .ant-checkbox-inner {
+              background-color: $white !important;
+              &::after {
+                transform: rotate(45deg) scale(0.8) translate(-70%, -50%);
+                border-color: $blue-main-color;
+              }
+            }
+          }
+
+          span {
+            padding: 0;
+            line-height: 17px;
+            color: $default-color;
+          }
+        }
+      }
+    }
+  }
+
+  .select-list {
+    @include flex(flex-start, unset, row);
+    gap: 40px;
+    width: 351px;
+    height: 28px;
+
+    .FSU,
+    .trainer {
+      @include flex(center, unset, row);
+      gap: 15px;
+      height: 100%;
+
+      .ant-select {
+        width: 200px;
+        height: 28px;
+
+        .ant-select-selector {
+          @include flex(center, unset, row);
+          padding: 5px 10px;
+          gap: 24px;
+          height: 100%;
+          width: 100%;
+          border: 0.5px solid #8b8b8b;
+          border-radius: 5px;
+
+          .ant-select-selection-search {
+            height: 100%;
+
+            .ant-select-selection-search-input {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .FSU {
+      width: 145px;
+
+      // .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input).ant-select-selector {
+      //   border-color: $blue-main-color !important;
+      //   box-shadow: 0 0 0 2px #285d9a47;
+      // }
+    }
+
+    .trainer {
+      width: 200px;
+    }
+  }
+
+  .button {
+    @include flex(center, flex-end, row);
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+    height: 38px;
+
+    .search-btn {
+      font-weight: 700;
+    }
+  }
+}

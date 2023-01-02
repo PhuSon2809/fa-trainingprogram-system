@@ -1,0 +1,263 @@
+@use "../../styles/" as *;
+
+input[type="file"] {
+  display: unset;
+}
+
+.modal {
+  .modal-dialog {
+    // min-width: 400px;
+    // max-width: 709px;
+    width: fit-content;
+    .shadow {
+      box-shadow: 0px 40px 20px rgba(0, 0, 0, 0.07) !important;
+    }
+
+    input[type="file"] {
+      display: unset !important;
+    }
+
+    .materials {
+      @include flex(center, unset, column);
+      padding: 0px 0px 20px;
+      gap: 15px;
+      min-width: 709px;
+      height: fit-content;
+      border-radius: 20px;
+      border: 0;
+
+      input {
+        display: block !important;
+      }
+
+      .modal-title {
+        @include flex(center, space-between, row);
+        padding: 10px 20px 10px 30px;
+        gap: 40px;
+        width: 100%;
+        height: 44px;
+        color: $white;
+        background: $default-color;
+        border-radius: 20px 20px 0px 0px;
+
+        .name {
+          @include flex(flex-start, unset, row);
+          gap: 40px;
+          p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+
+        button {
+          width: 24px;
+          height: 24px;
+          padding: 0;
+          gap: 0;
+          border: 0;
+          color: $white;
+        }
+      }
+
+      .content {
+        @include flex(flex-start, unset, column);
+        padding: 0px 30px;
+        gap: 20px;
+        width: 100%;
+        height: fit-content;
+
+        .title {
+          @include flex(center, unset, row);
+          gap: 50px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+        }
+
+        .list-material {
+          @include flex(flex-start, center, column);
+          padding: 10px 20px;
+          gap: 10px;
+          width: 649px;
+          height: fit-content;
+          background: $bg-lesson-color;
+          border-radius: 10px;
+
+          .line-noti {
+            @include flex(center, center, column);
+            width: 100%;
+
+            .notification {
+              font-size: 14px;
+              line-height: 17px;
+              color: $text-link-color;
+            }
+          }
+
+          p {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+          }
+
+          .material {
+            @include flex(center, space-between, row);
+            gap: 10px;
+            width: 100%;
+            height: fit-content;
+
+            p {
+              color: $text-link-color;
+              font-weight: 400;
+              text-decoration-line: underline;
+            }
+
+            .infor {
+              @include flex(center, unset, row);
+              gap: 19px;
+              width: fit-content;
+              height: fit-content;
+
+              p {
+                color: $text-modifi-material-color;
+                font-style: italic;
+                font-weight: 300;
+                text-decoration: none;
+              }
+
+              .group-btn {
+                @include flex(flex-start, unset, row);
+                gap: 10px;
+                height: 24px;
+
+                button {
+                  height: 24px;
+                  padding: 0;
+                  gap: 0;
+                  border: 0;
+                  color: $blue-main-color;
+                }
+              }
+            }
+          }
+        }
+
+        .add-material {
+          @include flex(flex-start, center, column);
+          padding: 10px 20px;
+          gap: 10px;
+          width: 649px;
+          height: fit-content;
+          background: $bg-lesson-color;
+          border-radius: 10px;
+
+          .add-action {
+            @include flex(center, center, row);
+            gap: 7px;
+            color: $blue-main-color;
+            cursor: pointer;
+
+            p {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 17px;
+            }
+          }
+
+          .update-name {
+            font-size: 14px;
+            line-height: 17px;
+
+            span {
+              color: $blue-main-color;
+            }
+          }
+
+          .input-group {
+            @include flex(flex-start, center, row);
+            gap: 2%;
+            width: 100%;
+
+            .input {
+              @include flex(flex-start, center, column);
+              gap: 7px;
+              width: 49%;
+
+              .box-select {
+                padding: 10px;
+                width: 100%;
+                height: 35px;
+                background: $white;
+                border: none;
+                border: 1px solid $blue-main-color;
+                border-radius: 10px;
+
+                .input-box {
+                  width: 100%;
+                  font-size: 14px;
+                  line-height: 17px;
+                }
+              }
+
+              .text-error {
+                padding-left: 10px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: red;
+              }
+            }
+          }
+
+          .upload-group {
+            @include flex(center, flex-start, row);
+            gap: 10px;
+            padding-left: 10px;
+
+            span {
+              font-size: 14px;
+              line-height: 17px;
+            }
+
+            .upload-btn {
+              height: 37px;
+              padding: 10px;
+              font-weight: 700;
+              position: relative;
+
+              input {
+                height: 100%;
+                width: 120px;
+                cursor: pointer;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                display: block !important;
+              }
+            }
+          }
+
+          .file-name {
+            @include flex(center, flex-start, row);
+            gap: 10px;
+            padding-left: 10px;
+            font-size: 14px;
+            line-height: 17px;
+
+            p {
+              color: $blue-main-color;
+            }
+          }
+        }
+      }
+
+      .action-btn {
+        height: 37px;
+        padding: 10px;
+        font-weight: 700;
+      }
+    }
+  }
+}

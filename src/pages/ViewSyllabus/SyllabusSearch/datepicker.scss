@@ -1,0 +1,111 @@
+.react-datepicker__month-container,
+.react-datepicker {
+  width: 300px !important;
+}
+
+.react-datepicker {
+  border-radius: 6px !important;
+  border: 1px solid #eedfdf;
+}
+
+.react-datepicker__header {
+  background-color: unset;
+}
+
+.react-datepicker-popper {
+  padding-top: 6px !important;
+}
+
+.react-datepicker__triangle::before {
+  display: none;
+}
+
+.react-datepicker__triangle::after {
+  display: none;
+}
+
+.react-datepicker__current-month {
+  font-size: 14px;
+  font-weight: 500;
+  color: #494e50;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8px;
+}
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow,
+.react-datepicker__navigation-icon::before {
+  border-color: #000;
+  margin-top: 7px;
+}
+
+.react-datepicker__day-names {
+  background-color: #f5f7fa;
+  width: 280px;
+  height: 40.59px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1000px;
+}
+
+.react-datepicker__month {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.react-datepicker__week {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.react-datepicker__day
+  react-datepicker__day--027
+  react-datepicker__day--keyboard-selected
+  react-datepicker__day--today {
+  background: #285d9a !important;
+  width: 40px;
+  height: 45px;
+}
+
+.react-datepicker__day {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-import {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 10px;
+  gap: 5px;
+
+  width: 95px;
+  height: 36px;
+
+  /* orange main */
+  color: white;
+  background: #d55b13;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  /* Inside auto layout */
+  margin-right: 4px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

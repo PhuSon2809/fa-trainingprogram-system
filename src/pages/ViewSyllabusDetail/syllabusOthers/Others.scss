@@ -1,0 +1,299 @@
+.container-Other {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+
+    .AssessmentScheme_card {
+        width: 40%;
+        height: 310px;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.16) !important;
+        align-items: center;
+        padding: 0px;
+        border-radius: 10px !important;
+        margin-left: 10px;
+
+        background: #ffffff !important;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%) !important;
+        border-radius: 0px 0px 10px 10px !important;
+
+        .AssessmentScheme_card_header {
+            width: 100%;
+            height: 30px;
+            background-color: #2d3748;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            border-radius: 10px 10px 0px 0px;
+            font-weight: 700 !important;
+        }
+
+        .AssessmentScheme_card_content {
+            width: 100%;
+
+            .AssessmentScheme_container_1 {
+                padding: 15px 12.5px;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                margin-bottom: 3px;
+
+                .AssessmentScheme_block {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    gap: 6px;
+
+                    .AssessmentScheme_text {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                        flex: 1;
+                    }
+
+                    .AssessmentScheme_textBox {
+                        font-family: "Inter";
+                        font-style: italic;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                        flex: 3;
+
+                        span {
+                            border: 1px solid #000000;
+                            border-radius: 10px;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+
+            .AssessmentScheme_container_2 {
+                padding: 15px 12.5px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 3px 0px;
+
+                .AssessmentScheme_block {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    gap: 22px;
+
+                    .AssessmentScheme_text {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                    }
+
+                    .AssessmentScheme_textBox {
+                        font-family: "Inter";
+                        font-style: italic;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+
+                        span {
+                            border: 1px solid #000000;
+                            border-radius: 10px;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+
+            .AssessmentScheme_container_3 {
+                padding: 25px 12.5px 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+
+                .AssessmentScheme_block {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    gap: 76px;
+
+                    .AssessmentScheme_text {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                    }
+
+                    .AssessmentScheme_textBox {
+                        font-family: "Inter";
+                        font-style: italic;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+
+                        span {
+                            border: 1px solid #000000;
+                            border-radius: 10px;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container-Other {
+        .time-allocation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+
+            width: 46%;
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
+            background: #ffffff;
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.16);
+            border-radius: 0px 0px 10px 10px;
+
+            .time-allocation-header {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                width: 100%;
+                height: 30px;
+                padding: 0;
+
+                background: #2d3748;
+                border-radius: 10px 10px 0px 0px;
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                align-self: stretch;
+                flex-grow: 0;
+            }
+
+            .time-allocation-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                width: 100%;
+                min-height: 280px;
+
+                flex: none;
+                order: 2;
+                flex-grow: 0;
+
+                .pie-chart {
+                    width: 210px !important;
+                    height: 210px !important;
+                }
+            }
+        }
+    }
+
+    .TrainingDeliveryPrinciple_card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        width: 87%;
+        padding-bottom: 20px;
+        background: #ffffff;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.16);
+        border-radius: 10px;
+        margin-top: 20px;
+
+        .TrainingDeliveryPrinciple_card_header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 0px 10px 30px;
+            margin-right: 40px;
+
+            /* text */
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            color: #ffffff;
+
+            width: 100%;
+            height: 30px;
+
+            background: #2d3748;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .principle {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-left: 35px;
+            width: 100%;
+
+            .principle-header {
+                flex-basis: 18%;
+            }
+
+            .principle-title {
+                margin-left: 13px;
+            }
+
+            .principle-content {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+
+                color: #000000;
+                flex-basis: 55%;
+                padding-bottom: 20px;
+            }
+
+            ul,
+            li {
+                font-family: "Inter";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+
+                color: #000000;
+            }
+        }
+    }
+
+    .divider {
+        color: #000000;
+        opacity: 0.4;
+        height: 0.5px !important;
+    }
+}

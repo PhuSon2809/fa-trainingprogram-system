@@ -1,0 +1,37 @@
+@use "../../styles/" as *;
+
+.wrapper {
+  @include flex(center, unset, row);
+  padding: 0px 20px 0px 30px;
+  gap: 75px;
+  width: 1120px;
+  height: fit-content;
+
+  .inner {
+    @include flex(center, flex-end, row);
+    padding: 0px;
+    gap: 5px;
+    width: 1070px;
+    height: 100%;
+
+    .drag {
+      @include flex(center, center, row);
+      padding: 10px;
+      gap: 10px;
+      width: 41px;
+      height: 151px;
+      background: $bg-drag-btn-color;
+      border-radius: 10px;
+      color: $blue-main-color;
+      display: none;
+    }
+
+    .list-lesson {
+      @include flex(flex-start, unset, column);
+      padding: 0px;
+      gap: 5px;
+      width: 948px;
+      height: fit-content;
+    }
+  }
+}

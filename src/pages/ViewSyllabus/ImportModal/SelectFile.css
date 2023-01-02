@@ -1,0 +1,29 @@
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+  display: flex;
+flex-direction: row;
+align-items: center;
+gap: 10px;
+font-size: 14px;
+line-height: 20px;
+  border: 1px solid #ccc;
+  display: block;
+  padding:  5px 20px;
+  cursor: pointer;
+  background-color: #2D3748;
+  color: #FFFFFF;
+  border-radius: 5px;
+  margin-left: 160px;
+  margin-top: -26px;
+  margin-bottom: 20px;
+  height: 32px;
+  width: 82px;
+  font-weight: bold;
+}
+
+.file-preview {
+  margin: 0 10px;
+  transform: translateY(-15px);
+}

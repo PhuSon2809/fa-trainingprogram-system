@@ -1,0 +1,41 @@
+@use "../../../styles/" as *;
+
+.box-class {
+  width: 100%;
+  padding: 0 10px;
+  border-right: 0.5px solid #474747;
+
+  .class-in-week {
+    @include flex(center, center, row);
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    background: #2d3748;
+    border-radius: 5px;
+
+    .class-code {
+      width: 100%;
+      font-size: 12px;
+      line-height: 15px;
+      color: #ffffff;
+    }
+  }
+
+  .intern {
+    background: #2d3748;
+  }
+
+  .fresher {
+    background: #285d9a;
+  }
+
+  .online {
+    background: #2f903f;
+  }
+
+  .offline {
+    background: #d45b13;
+  }
+}

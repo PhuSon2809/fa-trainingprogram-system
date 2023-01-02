@@ -1,0 +1,117 @@
+@use "../../../styles/" as *;
+
+.training-program {
+  @include flex(flex-start, center, column);
+  padding: 20px 30px;
+  gap: 10px;
+
+  width: 100%;
+  height: 100%;
+  
+  border-top: 1px solid $white;
+  background: $default-color;
+  color: white;
+  box-shadow: $box-shadow;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+
+  .training-program-title {
+    @include flex(flex-start, unset, row);
+    padding: 0 30px 0 0;
+    gap: 10px;
+
+    width: 486px;
+    height: 29px;
+
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.2em;
+      color: white;
+    }
+  }
+
+  .training-program-meta {
+    @include flex(flex-start, unset, row);
+    gap: 10px;
+    height: 17px;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+//Sylabuss
+.syllabus {
+  @include flex(flex-start, center, column);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+
+  width: 100%;
+  height: 100%;
+
+  background: $white;
+  box-shadow: $box-shadow;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0px;
+
+  .program-mem{
+    float: left;
+    background-color: $default-color;
+    padding: 23px 30px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 9px;
+    }
+  }
+
+  .program-content{
+    padding: 22px 30px;
+    float: left;
+  }
+
+  .inactive div p, .inactive div span {
+    color: #b9b9b9;
+  }
+
+  
+  
+
+
+  .program-name {
+    @include flex(flex-start, unset, row);
+    padding: 0 30px 0 0;
+    gap: 10px;
+
+    width: 486px;
+    height: 29px;
+
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.2em;
+      color: $default-color;
+    }
+  }
+
+  .syllabus-meta {
+    @include flex(flex-start, unset, row);
+    gap: 10px;
+    height: 17px;
+    color: $text-meta-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+

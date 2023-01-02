@@ -1,0 +1,36 @@
+@use "../../../styles/" as *;
+
+.syllabus-detail {
+  @include flex(center, unset, row);
+  padding: 0px;
+  gap: 3px;
+  width: 1132px;
+  overflow-y: scroll;
+
+  .content {
+    @include flex(flex-start, unset, column);
+    padding: 0;
+    // gap: 20px;
+    width: 1120px;
+    max-height: 1017px;
+  }
+
+  .scroll {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar {
+    border-radius: 20px;
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #8b8b8b;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: $white;
+  }
+}

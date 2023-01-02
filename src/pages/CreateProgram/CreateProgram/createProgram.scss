@@ -1,0 +1,178 @@
+@use "../../../styles/" as *;
+
+.createProgram {
+  @include flex(flex-end, unset, column);
+  gap: 50px;
+  width: 100%;
+
+  .content-header {
+    @include flex(flex-start, unset, column);
+    width: 100%;
+
+    .content-inner {
+      @include flex(flex-start, unset, column);
+      width: 100%;
+      padding: 0px 30px;
+      gap: 20px;
+      .syllabus-content {
+        min-height: 450px;
+      }
+      .title {
+        @include flex(flex-start, unset, unset);
+        padding: 10px 10px 0px 0px;
+        gap: 10px;
+        width: 100%;
+        height: 39px;
+
+        p {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 29px;
+        }
+      }
+
+      .lable-select-syllabus {
+        @include flex(center, unset, row);
+        padding: 0px 0px 0px 10px;
+        gap: 10px;
+        width: 1172px;
+        height: 35px;
+
+        .text {
+          width: 119px;
+          height: 19px;
+          /* header */
+          font-family: $font-family-inter;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          color: $black;
+        }
+
+        .box_select {
+          box-sizing: border-box;
+          /* Auto layout */
+          @include flex(center, unset, row);
+          padding: 10px;
+          gap: 10px;
+
+          width: 376px;
+          height: 35px;
+          position: relative;
+          background: $white;
+          border: none;
+          border: 1px solid #000000;
+          border-radius: 10px;
+
+          .search-icon {
+            width: 17.49px;
+            height: 17.49px;
+            color: #285d9a;
+          }
+
+          .input_box {
+            width: 100%;
+            height: 17px;
+            font-family: $font-family-inter;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+          }
+
+          .box_result {
+            position: absolute;
+            top: 34px;
+            left: 0px;
+            width: 376px;
+            height: 235px;
+
+            &:hover {
+              cursor: pointer;
+            }
+
+            .box_result_list {
+              @include flex(center, flex-end, row);
+              padding: 0px;
+              width: 376px;
+              max-height: 200px;
+              background: #ffffff;
+              box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.16);
+              border-radius: 0px 0px 10px 10px;
+
+              .box_result_list_wrap {
+                @include flex(flex-start, unset, column);
+                overflow-x: hidden;
+                overflow-y: scroll;
+
+                padding: 0px 0px 10px;
+                gap: 5px;
+
+                width: 376px;
+                max-height: 200px;
+
+                background: #ffffff;
+                border-radius: 0px 0px 10px 10px;
+
+                //scrollbar
+                &::-webkit-scrollbar {
+                  border-radius: 0;
+                  width: 4px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                  border-radius: 10px;
+                  background-color: #F1F1F1;
+                }
+
+                .syllabus_choosen {
+                  @include flex(flex-start, unset, column);
+                  padding: 10px 10px 10px 42px;
+                  gap: 4px;
+                  width: 376px;
+                  height: 60px;
+
+                  .syllabus_name {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    height: 19px;
+                    /* header */
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #000000;
+                  }
+
+                  .syllabus_choosen--detail {
+                    font-size: 14px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 20px;
+
+                    width: 280px;
+                    height: 17px;
+                  }
+                }
+
+                .syllabus_choosen:hover {
+                  background-color: #f1f1f1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use "../../styles/" as *;
+
+.wrapper {
+  @include flex(unset, unset, column);
+  width: 100%;
+  gap: 30px;
+  font-family: $font-family-inter;
+
+  .page-header {
+    @include flex(flex-start, unset, row);
+    padding: 15px 30px;
+    width: 100%;
+    height: 59px;
+    border-top: 1px solid $white;
+    background: $default-color;
+
+    .title {
+      color: $white;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  .list-title{
+    color: #285d9a;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+  }
+}

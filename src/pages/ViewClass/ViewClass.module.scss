@@ -1,0 +1,115 @@
+@use "../../styles/" as *;
+
+.content {
+  @include flex(flex-start, unset, column);
+  padding: 0px 30px;
+  gap: 20px;
+
+  .title {
+    @include flex(flex-start, unset, unset);
+    padding: 10px 10px 0px 0px;
+    gap: 10px;
+    width: 100%;
+    height: 39px;
+
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+}
+
+.layout-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 0px 0px 20px;
+  gap: 20px;
+
+  width: auto;
+  height: auto;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+  .layout-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    width: 373px;
+    // height: 696px;
+
+    .layout-general {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+
+      width: 373px;
+      // height: 545px;
+    }
+
+    // padding: 30px 0px 30px 20px;
+    .layout-attendee {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+
+      width: 373px;
+      height: 121px;
+
+      background: #FFFFFF;
+      border-radius: 20px;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+  }
+
+  .layout-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    width: 746px;
+    // height: 355px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+}
+
+.layout-training {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 20px;
+
+  // width: 1172px;
+  // height: 1044px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 1;
+}

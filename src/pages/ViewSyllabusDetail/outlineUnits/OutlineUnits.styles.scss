@@ -1,0 +1,101 @@
+// .unit-accordion {
+//     .accordion-button {
+//         background: #FFFFFF !important;
+//         font-family: 'Inter' !important;
+//         font-style: normal !important; 
+//         font-weight: 700 !important;
+//         font-size: 16px !important;
+//         line-height: 19px !important;
+
+//         color: #000000 !important;
+//     }
+
+//     .accordion-item {
+//         box-shadow: none !important;
+//     }
+// }
+
+.accordion-item-unit {
+    box-shadow: none !important;
+    border-bottom: 0.7px solid rgb(0, 0, 0);
+}
+
+.accordion-item-unit:last-child {
+    border-bottom: 0px
+}
+
+.MuiAccordionDetails-root {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+}
+
+.accordion-header-unit {
+    display: flex !important;
+    min-height: 80px !important;
+
+    .unit-number {
+        margin-left: 14px;
+        min-width: 54px;
+        height: 19px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #000000;
+
+
+
+    }
+
+    .unit-name {
+        height: 19px;
+
+        /* text */
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #000000;
+
+        margin-left: 50px;
+
+    }
+
+    .unit-duration {
+        height: 17px;
+
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+        margin-left: 50px;
+
+        color: #323232;
+
+    }
+
+    .icon-unit {
+        position: absolute;
+        right: 22px;
+        border-radius: 0px;
+        color: #285D9A;
+    }
+
+    .unit-collapsed {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+}

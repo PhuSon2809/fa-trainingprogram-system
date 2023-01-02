@@ -1,0 +1,176 @@
+.checkBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px 0px 0px;
+  gap: 15px;
+
+  width: 145px;
+  height: 76px;
+}
+
+.checkBox_title {
+  width: 45px;
+  height: 17px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  /* Main */
+
+  color: #2d3748;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.checkBox_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 85px;
+  height: 71px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.checkBox_createdBy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+
+  width: 223px;
+  height: 28px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.checkBox_createdBy_title {
+  width: 80px;
+  height: 17px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  /* Main */
+
+  color: #2d3748;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.checkBox_createdBy_select select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // padding: 5px 10px;
+    gap: 24px;
+    
+    width: 120px;
+    height: 28px;
+    
+    background: #FFFFFF;
+    /* Un-modified */
+    
+    border: 0.5px solid #8B8B8B;
+    border-radius: 5px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.savingBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 50px 20px 20px 20px;
+  gap: 10px;
+  color: white;
+  width: 300px;
+  height: 38px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.clear {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 25px;
+  gap: 10px;
+
+  width: 87px;
+  height: 31px;
+
+  /* Sub info */
+
+  background: #474747;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 25px;
+  gap: 10px;
+
+  width: 98px;
+  height: 31px;
+
+  /* Main */
+
+  background: #2d3748;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

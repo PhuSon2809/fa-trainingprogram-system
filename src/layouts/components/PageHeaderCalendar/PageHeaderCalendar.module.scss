@@ -1,0 +1,138 @@
+@use "../../../styles/" as *;
+
+.wrapper {
+  @include flex(flex-start, unset, column);
+  gap: 20px;
+  width: 100%;
+  height: fit-content;
+
+  .page-header {
+    @include flex(flex-start, center, column);
+    gap: 10px;
+    width: 100%;
+    height: 69px;
+    padding: 20px 30px;
+    border-top: 1px solid $white;
+    background: $default-color;
+    color: $white;
+
+    .inner {
+      @include flex(flex-start, unset, row);
+      gap: 10px;
+      width: fit-content;
+      height: 29px;
+
+      .title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.2em;
+      }
+    }
+  }
+
+  .search-box {
+    @include flex(center, unset, row);
+    padding: 0px 30px;
+    gap: 5px;
+    width: 100%;
+    height: 38px;
+
+    .search-input {
+      @include flex(center, unset, row);
+      padding: 10px;
+      gap: 10px;
+      width: 300px;
+      height: 35px;
+      background: $white;
+      border: 1px solid $black;
+      border-radius: 10px;
+
+      ::placeholder {
+        color: $black;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    .filter-wrapper {
+      .filter-btn {
+        @include flex(center, center, row);
+        padding: 7px 10px;
+        gap: 5px;
+        width: 85px;
+        height: 38px;
+        color: $white;
+        background: #2d3748;
+        border-radius: 10px;
+        font-weight: 700;
+      }
+
+      .popup-hide {
+        visibility: hidden;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .search-tag {
+    @include flex(center, unset, row);
+    padding: 0px 30px;
+    gap: 5px;
+    width: 1174px;
+    height: 38px;
+
+    .tag-name {
+      @include flex(center, center, row);
+      padding: 7px 15px;
+      gap: 8px;
+      width: fit-content;
+      height: 30px;
+      background: #474747;
+      border-radius: 20px;
+      color: #ffffff;
+
+      p {
+        font-style: italic;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .nav-tab {
+    @include flex(center, unset, row);
+    padding: 0px 30px;
+    gap: 20px;
+    width: 100%;
+    height: 27px;
+
+    .inner {
+      @include flex(flex-start, unset, row);
+      gap: 20px;
+      height: 100%;
+
+      .tab {
+        @include flex(center, center, row);
+        padding: 5px 10px;
+        gap: 10px;
+        width: 60px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+      }
+
+      .active {
+        background: #2d3748;
+        border-radius: 20px;
+        color: #ffffff !important;
+      }
+
+      .hide {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+body {
+    padding-right: 0px !important;
+    overflow: auto !important;
+  }
+  
+  .permission-header {
+    height: 59px;
+    width: 100%;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+    h2 {
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.2em;
+      color: #2d3748;
+      padding-bottom: 15px;
+    }
+  
+    hr {
+      width: 100%;
+      border: 0.7px solid #000000;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-bottom: 30px;
+    }
+  }
+  
+  .inner {
+    margin-bottom: 100px;
+  }
+  
+  .pagination-wrapper {
+    margin-top: 54px;
+  }
+  
+  button,
+  input,
+  [tabindex] {
+    outline: none;
+    border: none;
+    background: none;
+  }
+  
+  .head {
+    width: 72px;
+    height: 17px;
+    background-color: #2D3748;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  
+  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .body {
+    width: 89px;
+    height: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .head.TableCell {
+    color: #FFFFFF;
+  }
+  
+  .TBCell {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }

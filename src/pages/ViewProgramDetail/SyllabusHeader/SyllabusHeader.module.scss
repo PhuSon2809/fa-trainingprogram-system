@@ -1,0 +1,61 @@
+@use "../../../styles/" as *;
+
+.syllabus-header {
+  @include flex(flex-start, center, column);
+  padding: 10px 30px 20px;
+  gap: 10px;
+
+  width: 1120px;
+  height: 96px;
+
+  background: $white;
+  box-shadow: $box-shadow;
+  border-radius: 20px 20px 0px 0px;
+
+  .title {
+    @include flex(flex-start, space-between, row);
+    gap: 10px;
+    width: 1060px;
+    height: 30px;
+
+    .program-name {
+      @include flex(flex-start, unset, row);
+      width: fit-content;
+      height: 29px;
+      padding: 0 30px 0 0;
+      gap: 10px;
+
+      .text {
+        @include flex(center, unset, row);
+        gap: 20px;
+
+        p {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 29px;
+          letter-spacing: 0.2em;
+          color: $default-color;
+        }
+      }
+    }
+
+    .action-btn {
+      @include flex(center, center, row);
+      padding: 10px;
+      gap: 0;
+      width: 44px;
+      height: 30px;
+      color: $white !important;
+    }
+  }
+
+  .syllabus-meta {
+    @include flex(flex-start, unset, row);
+    gap: 10px;
+    height: 17px;
+    color: $text-meta-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

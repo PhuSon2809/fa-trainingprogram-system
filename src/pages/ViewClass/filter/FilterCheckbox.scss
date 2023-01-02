@@ -1,0 +1,38 @@
+.check_box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px 0px 0px;
+    gap: 15px;
+    width: 163px;
+    height: 103px;
+    .title{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2d3748;
+    }
+    .select_class {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 76px;
+        height: 98px;
+      }
+      .select_class_input {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 5px;
+        width: 165px;
+        height: 17px;
+        input {
+          margin: 0;
+          width: 16px;
+        }}
+  }
